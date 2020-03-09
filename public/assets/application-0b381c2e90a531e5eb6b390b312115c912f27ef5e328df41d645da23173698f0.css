@@ -70,3 +70,15 @@
     width: 30%;
   }
 }
+@media (min-width: 768px) and (max-width: 1224px) {
+  /* line 55, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+  .bd-sidebar {
+    width: 20%;
+  }
+}
+@media (min-width: 1225px) {
+  /* line 62, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+  .bd-sidebar {
+    width: 20%;
+  }
+}

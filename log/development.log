@@ -50324,3 +50324,21 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 92ms (Views: 66.0ms | ActiveRecord: 8.9ms)
 
 
+Started GET "/" for ::1 at 2020-03-09 00:27:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.slim within layouts/site_layout
+  Rendered site/index.slim within layouts/site_layout (13.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 264ms (Views: 241.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:27:27 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (63.0ms)
+Completed 200 OK in 162ms (Views: 134.8ms | ActiveRecord: 5.4ms)
+
+
