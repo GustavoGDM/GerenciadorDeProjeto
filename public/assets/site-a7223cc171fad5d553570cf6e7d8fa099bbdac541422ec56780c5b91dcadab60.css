@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* line 1, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/users.scss */
+.form_user {
+  padding: 30px 60px;
+}
+
+/* line 10, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+/* line 14, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.navbar__logo {
+  vertical-align: sub;
+}
+/* line 18, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.navbar__brand {
+  margin-left: 5px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* line 25, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.main_contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* line 31, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.Apresentacao {
+  width: 100%;
+  background: url("/assets/landing-fc7707f6ddb3d5e7bebe4b2a683d270de1dbde3f380e893b07f531298d5794a3.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+}
+/* line 38, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.Apresentacao__box {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2637429972) 0%, rgba(255, 255, 255, 0) 100%);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* line 43, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.Apresentacao__titulo {
+  font-weight: 700;
+}
+/* line 46, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+.Apresentacao__texto {
+  font-weight: 300;
+}
+
+@media (max-width: 573px) {
+  /* line 52, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao {
+    min-height: 800px;
+    background-position: initial;
+  }
+  /* line 55, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__box {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding: 33px 48px;
+  }
+  /* line 61, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__titulo {
+    font-size: 48px;
+    line-height: 63px;
+    font-weight: 700;
+  }
+  /* line 66, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__texto {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 573px) and (max-width: 768px) {
+  /* line 74, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao {
+    min-height: 900px;
+    background-position: initial;
+  }
+  /* line 77, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__box {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+  }
+  /* line 82, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__titulo {
+    font-size: 48px;
+    line-height: 63px;
+    text-align: right;
+  }
+  /* line 87, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__texto {
+    padding-left: 4rem;
+    margin-top: 15px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1224px) {
+  /* line 98, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao {
+    min-height: 1020px;
+    background-position: initial;
+  }
+  /* line 101, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__box {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+  }
+  /* line 106, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__titulo {
+    font-size: 48px;
+    line-height: 63px;
+    text-align: right;
+  }
+  /* line 111, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__texto {
+    padding-left: 4rem;
+    margin-top: 25px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 122, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .menu__fst_li {
+    margin-right: 15px;
+    padding-right: 10px;
+    border-right: #b6b6b6 solid 1px;
+  }
+}
+@media (min-width: 1225px) {
+  /* line 131, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao {
+    min-height: 100vh;
+    background-position: initial;
+  }
+  /* line 134, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__box {
+    width: 40%;
+    height: 100%;
+    padding: 60px;
+  }
+  /* line 139, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__titulo {
+    font-size: 48px;
+    line-height: 63px;
+    text-align: right;
+  }
+  /* line 144, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/site.scss */
+  .Apresentacao__texto {
+    padding-left: 4rem;
+    margin-top: 25px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

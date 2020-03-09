@@ -1,0 +1,65 @@
+div class="card"
+  div class="card-body"
+    div class="card__ident"
+       h3 class="card-title" = @project.name
+       h6 class="card-subtitle mb-2 text-muted" = format_data(@project.start_date)
+       span = @project.status
+    div class="card__desc"
+       h5
+        span[class="badge badge-secondary"] Descrição 
+       p = @project.description
+    div class="card__plan" 
+       h5 
+         span [class="badge badge-info"] Estimado
+       h3 class="card-title" = format_moeda(@project.budgeted)
+       h6 class="card-subtitle mb-2 text-muted" = format_data(@project.delivery_estimate)
+    div class="card__result" 
+       h5 
+        span [class="badge badge-success"] Realizado
+       h3 class="card-title" = format_moeda(@project.cost_done)
+       h6 class="card-subtitle mb-2 text-muted" = format_data(@project.delivered_date)
+    div
+      = link_to edit_project_path(@project) ,:class =>'btn btn-link'
+        i class="fas fa-edit"
+        span Editar
+      
+      
+div class='lista-issues'
+  div class="form_project__issues"
+    div class=""
+        = form_tag project_path(@project), :method =>'get', class:"form-inline"
+          div class="form-group row"
+            div class="form-group mx-sm-3 mb-2"
+            = text_field_tag :search, params[:seach] ,class:"form-control"
+            div class=""
+            = button_tag class:"btn btn-primary" do
+              <i class="fas fa-search"></i>
+    div class=""
+      = link_to new_issue_path(:project_id => @project),:class =>'btn btn-success'
+        i class="fas fa-bug"
+        span Novo Bug
+  div 
+    - @issues.each do |issue|
+      div class="card"
+        div class="card-body"
+          div
+            b Titulo
+            p =issue.name
+          div
+            b Status
+            p =issue.status
+          div
+            b Descrição
+            p =issue.description
+          div
+            b Data de Inicío
+            p =format_data(issue.start_date)
+          div
+            b Data do fim
+            p =format_data(issue.done_date)
+          div
+            = link_to edit_issue_path(issue),:class =>'btn btn-sm btn-outline-info '
+              span Editar
+            
+
+

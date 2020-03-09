@@ -1,0 +1,13 @@
+I"D(function() {
+  $(window).resize(function() {
+    var altura, height, largura, largura_tela, tela;
+    tela = $(window);
+    largura_tela = tela.width();
+    altura = (1000 * largura_tela) / 2000;
+    largura = $(".landing");
+    console.log(largura[0]);
+    return largura[0].style(height = "100px");
+  });
+
+}).call(this);
+:ET

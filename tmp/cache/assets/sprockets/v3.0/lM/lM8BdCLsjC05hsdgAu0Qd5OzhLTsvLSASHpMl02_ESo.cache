@@ -1,0 +1,14 @@
+I"1(function() {
+  $(window).resize(function() {
+    var altura, largura, largura_tela, tela;
+    tela = $(window);
+    largura_tela = tela.width();
+    altura = (1000 * largura_tela) / 2000;
+    largura = $(".landing")[0];
+    return largura.style({
+      height: "" + largura
+    });
+  });
+
+}).call(this);
+:ET

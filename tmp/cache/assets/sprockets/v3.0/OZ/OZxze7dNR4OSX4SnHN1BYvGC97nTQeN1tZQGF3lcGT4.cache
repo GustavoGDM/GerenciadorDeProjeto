@@ -1,0 +1,11 @@
+I" (function() {
+  var alertando;
+
+  window.addEventListener("resize", alertando());
+
+  alertando = function() {
+    return alert("Sucesso");
+  };
+
+}).call(this);
+:ET

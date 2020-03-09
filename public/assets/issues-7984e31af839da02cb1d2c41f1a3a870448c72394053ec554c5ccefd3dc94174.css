@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* line 6, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.link-unstyled, .link-unstyled:visited, .link-unstyled:hover, .link-unstyled:active, .link-unstyled:focus, .link-unstyled:active:hover {
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: inherit;
+  outline: inherit;
+  box-shadow: inherit;
+  padding: inherit;
+  vertical-align: inherit;
+}
+
+/* line 30, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.form_project {
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+}
+/* line 33, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.form_project__issues {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 38, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.listcard {
+  margin: 3rem 6rem;
+}
+
+/* line 41, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.card {
+  margin: 2rem auto;
+}
+/* line 43, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.card-body {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* line 49, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.card__ident {
+  flex: 1;
+}
+/* line 52, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.card__desc {
+  flex: 1;
+}
+/* line 55, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.card__plan {
+  flex: 1;
+}
+/* line 58, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.card__result {
+  flex: 1;
+}
+
+@media (max-width: 573px) {
+  /* line 64, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+  .listcard {
+    margin: unset;
+  }
+}
+/* line 70, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/projects.scss */
+.lista-issues {
+  margin: 2rem 3rem;
+}
+
+/* line 8, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/issues.scss */
+.form_issues {
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+}

@@ -1,0 +1,13 @@
+I"­(function() {
+  var largura;
+
+  largura = $(".landing");
+
+  console.log(largura);
+
+  $(window).resize(function() {
+    return console.log(largura[0]);
+  });
+
+}).call(this);
+:ET

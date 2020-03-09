@@ -1,0 +1,7 @@
+= render 'card', project: @project
+div class="form_issues"
+  = render 'form', issue: @issue
+  =link_to issue_path(@issue),:method=> :delete,:class=>"btn btn-outline-danger bnt_icon_text btn_del"
+    i class="fas fa-trash"
+    span Deletar Bug
+    

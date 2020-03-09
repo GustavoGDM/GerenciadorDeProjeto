@@ -1,0 +1,9 @@
+I"j(function() {
+  var largura;
+
+  largura = $(".landing")[0];
+
+  console.log(largura);
+
+}).call(this);
+:ET

@@ -1,0 +1,60 @@
+.bd-sidebar {
+  padding: 15px;
+  height: calc(100vh - 4rem);
+}
+
+.nav_side{
+  &__logo{
+    width: 100%;
+  }
+  &__profile{
+  padding: 10px;
+  text-align: center;
+  }
+  &__text{
+    
+    color: #8c8c8c;
+  }
+  &__user_name{
+    font-weight: bold;
+  }
+  a span{
+    margin-left: 5px;
+  }
+
+}
+
+.bnt_icon_text{
+  span{
+    margin-left: 5px;
+  }
+}
+.btn_del{
+  float: right;
+}
+.form-group-btns{
+
+  a,input,button {
+    margin: auto 0.5rem;
+  }
+}
+
+@media (max-width: 573px) {
+  .bd-sidebar{
+    width: 30%;
+  }
+}
+
+@media (min-width: 573px) and (max-width: 768px) {
+  .bd-sidebar{
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1224px) {
+}
+
+
+@media (min-width: 1225px) {
+
+}

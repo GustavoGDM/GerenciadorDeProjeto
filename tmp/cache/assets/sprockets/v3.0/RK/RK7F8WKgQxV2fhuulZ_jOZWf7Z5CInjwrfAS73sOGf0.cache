@@ -1,0 +1,10 @@
+I"à(function() {
+  $(window).resize(function() {
+    var altura, height, largura;
+    largura = $(".landing");
+    altura = $(window).width();
+    return largura[0].style(height = (1000 * altura) / 2000);
+  });
+
+}).call(this);
+:ET

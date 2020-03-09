@@ -1,0 +1,8 @@
+div class="form_project"
+  h3 Editar Projeto 
+  = render 'form', project: @project
+  =link_to project_path(@project),:method=> :delete,:class=>"btn btn-outline-danger bnt_icon_text btn_del"
+    i class="fas fa-trash"
+    span Deletar Projeto
+    
+    

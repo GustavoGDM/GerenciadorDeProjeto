@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  start_date: 2020-03-07 02:35:05
+  delivery_estimate: 2020-03-07 02:35:05
+  delivered_date: 2020-03-07 02:35:05
+  budgeted: 9.99
+  cost_done: 9.99
+  status: MyString
+
+two:
+  name: MyString
+  description: MyText
+  start_date: 2020-03-07 02:35:05
+  delivery_estimate: 2020-03-07 02:35:05
+  delivered_date: 2020-03-07 02:35:05
+  budgeted: 9.99
+  cost_done: 9.99
+  status: MyString

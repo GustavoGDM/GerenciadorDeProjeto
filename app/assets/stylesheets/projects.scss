@@ -1,0 +1,73 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.link-unstyled {
+  &,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus,
+  &:active:hover {
+    font-style: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: inherit;
+    text-decoration: none;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border-radius: inherit;
+    border: inherit;
+    outline: inherit;
+    box-shadow: inherit;
+    padding: inherit;
+    vertical-align: inherit;
+  }
+}
+
+.form_project{
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+  &__issues{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.listcard{
+  margin: 3rem 6rem;
+}
+.card{
+  margin: 2rem auto;
+  &-body{
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__ident{
+    flex: 1;
+  }
+  &__desc{
+    flex: 1;
+  }
+  &__plan{
+    flex: 1;
+  }
+  &__result{
+    flex: 1;
+  }
+}
+
+@media (max-width: 573px) {
+  .listcard{
+    margin: unset;
+  }
+}
+
+
+.lista-issues{
+  margin: 2rem 3rem;
+}
+

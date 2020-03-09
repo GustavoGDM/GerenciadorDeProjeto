@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@charset "UTF-8";
+/* line 1, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.bd-sidebar {
+  padding: 15px;
+  height: calc(100vh - 4rem);
+}
+
+/* line 7, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.nav_side__logo {
+  width: 100%;
+}
+/* line 10, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.nav_side__profile {
+  padding: 10px;
+  text-align: center;
+}
+/* line 14, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.nav_side__text {
+  color: #8c8c8c;
+}
+/* line 18, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.nav_side__user_name {
+  font-weight: bold;
+}
+/* line 21, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.nav_side a span {
+  margin-left: 5px;
+}
+
+/* line 28, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.bnt_icon_text span {
+  margin-left: 5px;
+}
+
+/* line 32, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.btn_del {
+  float: right;
+}
+
+/* line 37, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+.form-group-btns a, .form-group-btns input, .form-group-btns button {
+  margin: auto 0.5rem;
+}
+
+@media (max-width: 573px) {
+  /* line 43, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+  .bd-sidebar {
+    width: 30%;
+  }
+}
+@media (min-width: 573px) and (max-width: 768px) {
+  /* line 49, /home/gustavo/Área de Trabalho/Ruby/Desafio/GerenciamentoDeProjetos/app/assets/stylesheets/application_layout.scss */
+  .bd-sidebar {
+    width: 30%;
+  }
+}

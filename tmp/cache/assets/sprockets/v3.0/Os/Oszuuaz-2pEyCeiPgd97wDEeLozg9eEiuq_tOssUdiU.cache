@@ -1,0 +1,9 @@
+I"¦(function() {
+  $(window).resize(function() {
+    var largura_tela;
+    largura_tela = $(window);
+    return console.log(largura_tela.width());
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,47 @@
+
+
+
+div class="listcard"
+    div style="display: flex;margin:1rem "
+        h2 Meus Projetos
+    div class="form_project"
+        = form_tag projects_path, :method =>'get', class:"form-inline"
+          div class="form-group row"
+            div class="form-group mx-sm-3 mb-2"
+            = text_field_tag :search, params[:seach] ,class:"form-control"
+            div class=""
+            = button_tag class:"btn btn-primary" do
+              <i class="fas fa-search"></i>
+    -if @msg
+        h1 = @msg
+    -elsif !@projects.blank?
+      - @projects.each do |project|
+              = link_to project_path(project), :class=>"link-unstyled"
+                div class="card"
+                  div class="card-body"
+                    div class="card__ident"
+                      h3 class="card-title" = project.name
+                      h6 class="card-subtitle mb-2 text-muted" = format_data(project.start_date)
+                      span = project.status
+                    div class="card__plan" 
+                      h5 
+                        span [class="badge badge-info"] Estimado
+                      h3 class="card-title" = format_moeda(project.budgeted)
+                      h6 class="card-subtitle mb-2 text-muted" = format_data(project.delivery_estimate)
+                    div class="card__result" 
+                      h5 
+                        span [class="badge badge-success"] Realizado
+                      h3 class="card-title" = format_moeda(project.cost_done)
+                      h6 class="card-subtitle mb-2 text-muted" = format_data(project.delivered_date)
+    -else
+      div 
+        h1[class="display-4"] Que  tal criar um novo Projeto ? 
+        p[class="lead"] Agora é o momento de criar seu primeiro projeto 
+        = link_to new_project_path ,:class =>"btn btn-primary btn-lg bnt_icon_text"
+          i class="fas fa-plus-circle"
+          span Novo Projeto
+      
+            
+  
+
+    

@@ -1,0 +1,25 @@
+I"(function() {
+  var DimencionarImagem;
+
+  $(document).ready(function() {
+    return DimencionarImagem();
+  });
+
+  $(window).resize(function() {
+    return DimencionarImagem();
+  });
+
+  DimencionarImagem = function() {
+    var altura, largura, largura_tela, tela;
+    tela = $(window);
+    largura_tela = tela.width();
+    if (largura_tela > 1224) {
+      altura = (1000 * largura_tela) / 2000;
+      largura = $(".Apresentacao")[0];
+      largura.style.height = altura + "px";
+      return console.log(altura);
+    }
+  };
+
+}).call(this);
+:ET

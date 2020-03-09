@@ -1,0 +1,17 @@
+div class="card"
+  = link_to project_path(project), :class=>"link-unstyled"
+    div class="card-body"
+      div class="card__ident"
+        h3 class="card-title" = project.name
+        h6 class="card-subtitle mb-2 text-muted" = format_data(project.start_date)
+        span = project.status
+      div class="card__plan" 
+        h5 
+          span [class="badge badge-info"] Estimado
+        h3 class="card-title" = format_moeda(project.budgeted)
+        h6 class="card-subtitle mb-2 text-muted" = format_data(@project.delivery_estimate)
+      div class="card__result" 
+        h5 
+          span [class="badge badge-success"] Realizado
+        h3 class="card-title" = format_moeda(project.cost_done)
+        h6 class="card-subtitle mb-2 text-muted" = format_data(project.delivered_date)

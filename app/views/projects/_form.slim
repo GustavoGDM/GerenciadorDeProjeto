@@ -1,0 +1,45 @@
+  = form_for(project) do |form| 
+    - if project.errors.any? 
+      div[id="error_explanation"]
+        h2 = pluralize(project.errors.count, "error") 
+            . prohibited this project from being saved :
+        ul
+          - project.errors.full_messages.each do |message| 
+          li = message 
+          
+
+    div[class="form-group"]
+    = form.label "Título do Projeto" 
+    = form.text_field :name ,class:"form-control" ,placeholder:"Nome"
+    
+    div[class="form-group"]
+      = form.label "Status" 
+      = form.text_field :status ,class:"form-control" ,placeholder:"Status"
+
+    div[class="form-group"]
+      = form.label "Descrição" 
+      = form.text_field :description ,class:"form-control" ,placeholder:"Descrição"
+    
+    div[class="form-group"]
+      = form.label "Data Início" 
+      = form.date_field :start_date ,class:"form-control" ,placeholder:"Data Estimada de entrega"
+    
+    div[class="form-group"]
+      = form.label "Data Estimada para entrega" 
+      = form.date_field :delivery_estimate ,class:"form-control" ,placeholder:"Data Estimada de entrega"
+  
+    div[class="form-group"]
+      = form.label "Data entrega" 
+      = form.date_field :delivered_date ,class:"form-control" ,placeholder:"Data da entrega"
+  
+    div[class="form-group"]
+      = form.label "Custo Estimado" 
+      = form.text_field :budgeted,class:"form-control" 
+
+    div[class="form-group"]
+      = form.label "Custo realizado" 
+      = form.text_field :cost_done ,class:"form-control"
+    
+    div[class="form-group form-group-btns"]
+      = form.submit "Salvar", class:"btn btn-primary btn-lg" 
+      = link_to "Back", :back ,class:"btn btn-secondary btn-lg"

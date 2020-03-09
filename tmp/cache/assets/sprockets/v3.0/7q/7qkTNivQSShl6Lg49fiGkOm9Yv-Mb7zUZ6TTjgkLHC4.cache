@@ -1,0 +1,9 @@
+I"ê(function() {
+  var alertando;
+
+  window.addEventListener("resize", alertando = function() {
+    return alert("Sucesso");
+  });
+
+}).call(this);
+:ET
