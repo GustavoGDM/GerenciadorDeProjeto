@@ -28,12 +28,11 @@ div class='lista-issues'
   div class="form_project__issues"
     div class=""
         = form_tag project_path(@project), :method =>'get', class:"form-inline"
-          div class="form-group row"
-            div class="form-group mx-sm-3 mb-2"
+          div class="input-group mb-3"
             = text_field_tag :search, params[:seach] ,class:"form-control"
-            div class=""
-            = button_tag class:"btn btn-primary" do
-              <i class="fas fa-search"></i>
+            div class="input-group-append"
+              = button_tag class:"btn btn-primary" do
+                <i class="fas fa-search"></i>
     div class=""
       = link_to new_issue_path(:project_id => @project),:class =>'btn btn-success'
         i class="fas fa-bug"

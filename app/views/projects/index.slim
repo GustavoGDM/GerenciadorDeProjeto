@@ -4,14 +4,14 @@
 div class="listcard"
     div style="display: flex;margin:1rem "
         h2 Meus Projetos
-    div class="form_project"
-        = form_tag projects_path, :method =>'get', class:"form-inline"
-          div class="form-group row"
-            div class="form-group mx-sm-3 mb-2"
-            = text_field_tag :search, params[:seach] ,class:"form-control"
-            div class=""
-            = button_tag class:"btn btn-primary" do
-              <i class="fas fa-search"></i>
+    div class=""
+        = form_tag projects_path, :method =>'get', class:""
+          div class="input-group mb-3"
+              div class="form-group"
+              = text_field_tag :search, params[:seach] ,class:"form-control"
+              div class="input-group-append"
+                = button_tag class:"btn btn-primary" do
+                  i class="fas fa-search"
     -if @msg
         h1 = @msg
     -elsif !@projects.blank?

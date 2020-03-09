@@ -50342,3 +50342,438 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 162ms (Views: 134.8ms | ActiveRecord: 5.4ms)
 
 
+Started GET "/" for ::1 at 2020-03-09 01:01:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (74.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.slim within layouts/site_layout
+  Rendered site/index.slim within layouts/site_layout (55.4ms)
+  [1m[36mUser Load (89.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 1839ms (Views: 1445.5ms | ActiveRecord: 337.4ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:01:06 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (54.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (237.2ms)
+Completed 200 OK in 754ms (Views: 651.8ms | ActiveRecord: 59.6ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:02:02 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (31.3ms)
+Completed 200 OK in 103ms (Views: 97.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:02:16 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (14.5ms)
+Completed 200 OK in 56ms (Views: 52.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:02:23 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (23.4ms)
+Completed 200 OK in 64ms (Views: 58.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:03:39 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (15.0ms)
+Completed 200 OK in 62ms (Views: 57.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:04:51 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (20.4ms)
+Completed 200 OK in 74ms (Views: 67.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:05:26 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (15.3ms)
+Completed 200 OK in 59ms (Views: 54.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:05:37 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (19.6ms)
+Completed 200 OK in 66ms (Views: 57.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:06:05 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (17.0ms)
+Completed 200 OK in 64ms (Views: 58.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:07:24 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (16.9ms)
+Completed 200 OK in 70ms (Views: 65.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:09:31 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (46.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (75.8ms)
+Completed 200 OK in 178ms (Views: 71.6ms | ActiveRecord: 53.8ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:09:31 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (16.0ms)
+Completed 200 OK in 61ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:09:46 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (25.1ms)
+Completed 200 OK in 70ms (Views: 61.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:10:02 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (32.5ms)
+Completed 200 OK in 82ms (Views: 70.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:10:11 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (21.2ms)
+Completed 200 OK in 91ms (Views: 86.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects/8" for ::1 at 2020-03-09 01:10:12 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 8]]
+  Rendered projects/show.slim within layouts/application (20.9ms)
+Completed 200 OK in 68ms (Views: 58.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:10:13 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (21.2ms)
+Completed 200 OK in 92ms (Views: 87.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:10:28 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (26.3ms)
+Completed 200 OK in 95ms (Views: 88.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:11:09 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.8ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (22.2ms)
+Completed 200 OK in 65ms (Views: 58.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:12:15 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (17.8ms)
+Completed 200 OK in 60ms (Views: 54.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:12:19 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (23.7ms)
+Completed 200 OK in 64ms (Views: 59.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:12:24 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (23.3ms)
+Completed 200 OK in 71ms (Views: 64.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:13:22 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (26.0ms)
+Completed 200 OK in 67ms (Views: 61.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects/7?utf8=%E2%9C%93&search=&button=" for ::1 at 2020-03-09 01:13:26 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "button"=>"", "id"=>"7"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.9ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1 AND (lower(name) LIKE '%%')[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (22.0ms)
+Completed 200 OK in 76ms (Views: 65.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/projects/7?utf8=%E2%9C%93&search=&button=" for ::1 at 2020-03-09 01:13:37 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "button"=>"", "id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1 AND (lower(name) LIKE '%%')[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (21.1ms)
+Completed 200 OK in 74ms (Views: 67.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:13:42 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (18.6ms)
+Completed 200 OK in 76ms (Views: 68.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:13:46 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (19.4ms)
+Completed 200 OK in 70ms (Views: 56.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:13:56 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (32.0ms)
+Completed 200 OK in 82ms (Views: 75.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects?utf8=%E2%9C%93&search=car&button=" for ::1 at 2020-03-09 01:14:09 -0300
+Processing by ProjectsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"car", "button"=>""}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND (lower(name) LIKE '%car%') ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendering projects/index.slim within layouts/application
+  Rendered projects/index.slim within layouts/application (20.4ms)
+Completed 200 OK in 78ms (Views: 68.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:14:12 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (24.6ms)
+Completed 200 OK in 117ms (Views: 107.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:14:18 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (39.5ms)
+Completed 200 OK in 92ms (Views: 77.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:14:24 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (3.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (25.9ms)
+Completed 200 OK in 83ms (Views: 75.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/projects?utf8=%E2%9C%93&search=a&button=" for ::1 at 2020-03-09 01:14:36 -0300
+Processing by ProjectsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"a", "button"=>""}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND (lower(name) LIKE '%a%') ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendering projects/index.slim within layouts/application
+  Rendered projects/index.slim within layouts/application (13.6ms)
+Completed 200 OK in 63ms (Views: 57.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects?utf8=%E2%9C%93&search=car&button=" for ::1 at 2020-03-09 01:14:40 -0300
+Processing by ProjectsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"car", "button"=>""}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 AND (lower(name) LIKE '%car%') ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendering projects/index.slim within layouts/application
+  Rendered projects/index.slim within layouts/application (19.9ms)
+Completed 200 OK in 66ms (Views: 59.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:14:42 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (20.5ms)
+Completed 200 OK in 76ms (Views: 69.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:14:43 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (15.4ms)
+Completed 200 OK in 59ms (Views: 51.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:14:49 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (36.2ms)
+Completed 200 OK in 84ms (Views: 77.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:15:59 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (18.1ms)
+Completed 200 OK in 72ms (Views: 67.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:16:24 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.9ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (17.5ms)
+Completed 200 OK in 76ms (Views: 63.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/projects/7" for ::1 at 2020-03-09 01:16:29 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 7]]
+  Rendered projects/show.slim within layouts/application (16.6ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:16:46 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (17.1ms)
+Completed 200 OK in 58ms (Views: 52.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:17:25 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (16.5ms)
+Completed 200 OK in 64ms (Views: 59.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 01:17:32 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (15.6ms)
+Completed 200 OK in 67ms (Views: 61.8ms | ActiveRecord: 1.1ms)
+
+
