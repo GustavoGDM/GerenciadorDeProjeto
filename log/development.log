@@ -49952,3 +49952,229 @@ puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
   Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
   Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.9ms)
+Started GET "/" for ::1 at 2020-03-09 00:04:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendering site/index.slim within layouts/site_layout
+  Rendered site/index.slim within layouts/site_layout (22.8ms)
+Completed 500 Internal Server Error in 405ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `url' for #<#<Class:0x000055e765c376c8>:0x000055e765cfb820>
+Did you mean?  URI):
+    13:     nav class="navbar navbar-expand-lg navbar-light bg-light"
+    14:       = link_to site_index_path	,:class => 'navbar-brand' do
+    15:         div[class]
+    16:           img src=url(asset_path("comece.png")) width="30" height="30" class="navbar__logo"
+    17:           span[class='navbar__brand'] Gerênciamento de Projetos 
+    18: 
+    19:       
+  
+app/views/layouts/site_layout.slim:16:in `block in _app_views_layouts_site_layout_slim___3086009546688926285_47226171043680'
+app/views/layouts/site_layout.slim:14:in `_app_views_layouts_site_layout_slim___3086009546688926285_47226171043680'
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.8ms)
+Started GET "/" for ::1 at 2020-03-09 00:04:33 -0300
+Processing by SiteController#index as HTML
+  Rendering site/index.slim within layouts/site_layout
+  Rendered site/index.slim within layouts/site_layout (9.1ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-03-09 00:04:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/site_layout
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/site_layout (19.6ms)
+Completed 200 OK in 75ms (Views: 37.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/javascripts/devise/sessions.js" for ::1 at 2020-03-09 00:04:36 -0300
+Started GET "/stylesheets/devise/sessions.css" for ::1 at 2020-03-09 00:04:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/javascripts/devise/sessions.js"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/stylesheets/devise/sessions.css"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (8.0ms)
+  Rendered collection of /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (5.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendering /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.4ms)
+  Rendered /home/gustavo/.rvm/gems/ruby-2.5.5/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.4ms)
+Started POST "/users/sign_in" for ::1 at 2020-03-09 00:04:38 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wAmhb5jgApF10iikmxZJm11LDdykwDMU0YHxu1kjAQfl9l9f6H2WOF8yP+X7MRzTFqNrYpGOb72ttEfAsOqB6A==", "user"=>{"email"=>"user@user.com", "password"=>"[FILTERED]"}, "commit"=>"Acessar"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "user@user.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 143ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:04:38 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (25.3ms)
+Completed 200 OK in 112ms (Views: 95.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:05:25 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (26.8ms)
+Completed 200 OK in 74ms (Views: 67.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:06:10 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (15.1ms)
+Completed 200 OK in 66ms (Views: 60.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:06:55 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (17.2ms)
+Completed 200 OK in 113ms (Views: 107.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:07:04 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (22.3ms)
+Completed 200 OK in 114ms (Views: 106.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/projects/8" for ::1 at 2020-03-09 00:07:09 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.6ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 8]]
+  Rendered projects/show.slim within layouts/application (18.0ms)
+Completed 200 OK in 138ms (Views: 118.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/projects/8" for ::1 at 2020-03-09 00:07:09 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 8]]
+  Rendered projects/show.slim within layouts/application (19.4ms)
+Completed 200 OK in 76ms (Views: 68.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/projects/8" for ::1 at 2020-03-09 00:07:11 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.7ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 8]]
+  Rendered projects/show.slim within layouts/application (18.2ms)
+Completed 200 OK in 62ms (Views: 56.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/projects/8" for ::1 at 2020-03-09 00:07:18 -0300
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering projects/show.slim within layouts/application
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."project_id" = $1[0m  [["project_id", 8]]
+  Rendered projects/show.slim within layouts/application (26.8ms)
+Completed 200 OK in 120ms (Views: 110.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/projects" for ::1 at 2020-03-09 00:07:26 -0300
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering projects/index.slim within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."user_id" = $1 ORDER BY "projects"."name" ASC[0m  [["user_id", 2]]
+  Rendered projects/index.slim within layouts/application (16.6ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 1.1ms)
+
+
